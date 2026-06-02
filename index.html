@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sreejith Sreedharan Nair</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #faf9f7;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #1a1a2e;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #6b7280;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: #2d6a4f; }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+    }
+
+    .about-card {
+      max-width: 560px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #e8f5e9;
+      border: 3px solid #b7dfca;
+      margin: 0 auto 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .about-card h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-card .role {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #2d6a4f;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-card p {
+      font-size: 1rem;
+      color: #4b5563;
+      line-height: 1.85;
+      margin-bottom: 2rem;
+    }
+
+    .location {
+      font-size: 0.82rem;
+      color: #9ca3af;
+      margin-bottom: 2.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .social-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #374151;
+      text-decoration: none;
+      padding: 0.45rem 1.1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 100px;
+      background: #fff;
+      transition: all 0.2s;
+    }
+    .social-links a:hover {
+      border-color: #2d6a4f;
+      color: #2d6a4f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.78rem;
+      color: #d1d5db;
+      border-top: 1px solid #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Sreejith S N</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">About</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="about-card">
+      <div class="avatar">👋</div>
+      <h1>Sreejith Sreedharan Nair</h1>
+      <p class="role">DevOps Consultant &amp; Photography Enthusiast</p>
+      <p>
+        Hi, I'm Sreejith — a DevOps consultant based in Calgary, Canada.
+        I help engineering teams build reliable, scalable infrastructure.
+        When I'm not deep in cloud platforms and automation pipelines,
+        you'll find me behind a camera, chasing light and telling stories through photography.
+      </p>
+      <p class="location">📍 Calgary, AB, Canada</p>
+      <div class="social-links">
+        <a href="mailto:sreejithsnairdevops@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/sreejith-s-n-79538a395" target="_blank">LinkedIn</a>
+        <a href="https://github.com/sreenair104" target="_blank">GitHub</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Sreejith Sreedharan Nair</footer>
+
+</body>
+</html>

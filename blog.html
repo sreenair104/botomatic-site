@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Sreejith Sreedharan Nair</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #faf9f7;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #1a1a2e;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #6b7280;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: #2d6a4f; }
+
+    main {
+      flex: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      width: 100%;
+    }
+
+    .page-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .page-sub {
+      font-size: 0.9rem;
+      color: #9ca3af;
+      margin-bottom: 3rem;
+    }
+
+    .post-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .post-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #f3f4f6;
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s;
+    }
+    .post-item:first-child { border-top: 1px solid #f3f4f6; }
+    .post-item:hover { opacity: 0.65; }
+
+    .post-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1a1a2e;
+      margin-bottom: 0.25rem;
+    }
+    .post-excerpt {
+      font-size: 0.83rem;
+      color: #9ca3af;
+    }
+    .post-date {
+      font-size: 0.78rem;
+      color: #d1d5db;
+      white-space: nowrap;
+      margin-left: 2rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 4rem 0;
+      color: #9ca3af;
+    }
+    .empty-state p { font-size: 0.95rem; line-height: 1.8; }
+    .empty-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.78rem;
+      color: #d1d5db;
+      border-top: 1px solid #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Sreejith S N</a>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="blog.html" class="active">Blog</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="page-heading">Blog</h1>
+    <p class="page-sub">Thoughts on DevOps, cloud, and occasionally photography.</p>
+
+    <div class="post-list">
+
+      <!-- SAMPLE POST — replace or duplicate this block for each new post -->
+      <a class="post-item" href="#">
+        <div>
+          <p class="post-title">Welcome to my blog</p>
+          <p class="post-excerpt">First post coming soon — stay tuned.</p>
+        </div>
+        <span class="post-date">Jun 2026</span>
+      </a>
+
+      <!-- Add more posts here:
+      <a class="post-item" href="posts/my-post.html">
+        <div>
+          <p class="post-title">Your post title</p>
+          <p class="post-excerpt">A short description.</p>
+        </div>
+        <span class="post-date">Jun 2026</span>
+      </a>
+      -->
+
+    </div>
+  </main>
+
+  <footer>© 2026 Sreejith Sreedharan Nair</footer>
+
+</body>
+</html>
